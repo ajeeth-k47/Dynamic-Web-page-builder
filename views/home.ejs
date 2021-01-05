@@ -1,0 +1,60 @@
+<%- include("header"); -%>
+
+
+
+<form class="" action="/" method="post">
+<% uielements.forEach(function(elements){ %>
+  <div class="form-group">
+
+
+  <label for=""><%=elements.Name%></label>
+  <% switch(elements.type){
+    case 'TextBox':
+    elements.type='text'
+    break;
+    case 'SecretTextBox':
+    elements.type='password'
+    break;
+    case 'RadioButton':
+    elements.type='radio'
+    break;
+    case 'CheckBox':
+    elements.type='checkbox'
+    break;
+  }%>
+
+  <% if(elements.type=="radio" || elements.type=="checkbox") { %>
+    <br />
+    <% elements.Options.forEach( function(option){%>
+
+      <input type="<%= elements.type%>"  name="<%= elements.Name%>" value="<%= option.Value %>">
+      <label for="<%= option.Value%>"><%= option.Value%></label><br>
+
+    <% }); %>
+<br />
+      <% } else if(elements.type=="Dropdown") {%>
+
+        <select name="<%= elements.Name%>" class="form-control">
+
+            <% elements.DropdownValues.forEach( function(option){%>
+
+             <option value="<%= option.Value%>"><%= option.DisplayValue%></option>
+
+            <% }); %>
+        </select>
+
+  <% }else if(elements.type=="TextArea" || elements.type=="textarea")  {%>
+
+         <textarea name="<%= elements.Name%>" rows="8" cols="80" class="form-control"></textarea>
+         <br />
+    <%}else{ %>
+    <input type="<%=elements.type%>" name="" value="" class="form-control">
+    <br />
+    <% } %>
+    </div>
+<% });%>
+<br />
+<button type="submit" class="btn btn-primary" name="button"><%= action %></button>
+</form>
+
+<%- include("footer"); -%>

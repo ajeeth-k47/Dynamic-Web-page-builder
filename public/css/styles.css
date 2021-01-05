@@ -1,0 +1,22 @@
+form {
+
+
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+  margin-left: 450px;
+  margin-right: 340px;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  
+}
+
+body{
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+}
+
+
+input{
+  max-width: 300px;
+}

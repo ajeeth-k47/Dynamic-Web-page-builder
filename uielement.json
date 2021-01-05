@@ -1,0 +1,66 @@
+
+
+{
+
+  "ActionDisplayName": "Login",
+  "Attributes":[
+  {
+  "Name":"username",
+  "size":"10",
+  "type":"textBox"
+},
+{
+  "Name":"password",
+  "size":"10",
+  "type":"SecretTextBox"
+},
+{
+  "Name":"Language",
+  "Options":[
+    {
+      "DisplayValue":"English",
+      "Value":"English"
+    },
+    {
+      "DisplayValue":"Tamil",
+      "Value":"Tamil"
+    },
+    {
+      "DisplayValue":"Hindhi",
+      "Value":"Hindhi"
+    }
+
+  ],
+  "type":"checkbox"
+},
+{
+  "DropdownValues":[
+    {
+      "DisplayValue":"Guest",
+      "Value":"guest"
+    },
+    {
+      "DisplayValue":"Admin",
+      "Value":"admin"
+    }
+  ],
+  "Name":"UserType",
+  "type":"Dropdown"
+},
+{
+  "Name":"Address",
+  "size":"10",
+  "type":"textarea"
+},
+{
+  "Name":"Date-of-Birth",
+  "size":"10",
+  "type":"datetime-local"
+},
+{
+  "Name":"Time",
+  "size":"10",
+  "type":"time"
+}
+]
+}
