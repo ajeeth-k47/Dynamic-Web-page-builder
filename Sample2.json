@@ -1,0 +1,37 @@
+{
+  "ActionDisplayName":"Submit",
+  "Attributes":[
+    {
+      "Name":"Name",
+      "type":"text"
+    },
+    {
+      "Name":"Gender",
+      "Options":[
+        {
+          "DisplayValue":"Male",
+          "Value":"male"
+        },
+        {
+          "DisplayValue":"Female",
+          "Value":"female"
+        }
+
+      ],
+      "type":"radio"
+    },{
+      "DropdownValues":[
+        {
+          "DisplayValue":"A/c",
+          "Value":"guest"
+        },
+        {
+          "DisplayValue":"Non A/c",
+          "Value":"admin"
+        }
+      ],
+      "Name":"Roomtype",
+      "type":"Dropdown"
+    }
+  ]
+}
