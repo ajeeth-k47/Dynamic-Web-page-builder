@@ -61,6 +61,25 @@
   "Name":"Time",
   "size":"10",
   "type":"time"
+},
+{
+  "Name":"Continent",
+  "Options":[
+    {
+      "DisplayValue":"America",
+      "Value":"America"
+    },
+    {
+      "DisplayValue":"Asia",
+      "Value":"Asia"
+    },
+    {
+      "DisplayValue":"Europe",
+      "Value":"Europe"
+    }
+
+  ],
+  "type":"RadioButton"
 }
 ]
 }
